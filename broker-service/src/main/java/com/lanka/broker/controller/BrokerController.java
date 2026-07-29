@@ -25,5 +25,13 @@ public class BrokerController {
     BrokerLoginResponse login(@RequestBody BrokerLoginRequest request) {
         return service.login(request);
     }
+    @GetMapping
+    List<BrokerResponse> list() {
+        return service.list();
+    }
 
+    @GetMapping("/pending")
+    List<BrokerResponse> pending() {
+        return service.getPending();
+    }
 }
