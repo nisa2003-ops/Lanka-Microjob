@@ -25,3 +25,10 @@ public class BrokerService {
         this.workers = workers;
         this.passwordEncoder = passwordEncoder;
     }
+    public BrokerResponse apply(BrokerRequest request) {
+        if (request.password() == null || request.password().isBlank()) {
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Broker password is required");
+        }
+    }
+    }
+}
