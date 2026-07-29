@@ -15,3 +15,15 @@ public class BrokerController {
     public BrokerController(BrokerService service) {
         this.service = service;
     }
+
+    @PostMapping
+    BrokerResponse apply(@RequestBody BrokerRequest request) {
+        return service.apply(request);
+    }
+
+    @PostMapping("/login")
+    BrokerLoginResponse login(@RequestBody BrokerLoginRequest request) {
+        return service.login(request);
+    }
+
+}
