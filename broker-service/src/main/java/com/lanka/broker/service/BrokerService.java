@@ -29,6 +29,19 @@ public class BrokerService {
         if (request.password() == null || request.password().isBlank()) {
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Broker password is required");
         }
+        Broker broker = new Broker();
+        broker.setName(request.name());
+        broker.setNic(request.nic());
+        broker.setPhone(request.phone());
+        broker.setEmail(request.email());
+        broker.setPassword(passwordEncoder.encode(request.password()));
+        broker.setDistrict(request.district());
+        broker.setCity(request.city());
+        broker.setYearsExperience(request.yearsExperience());
+        broker.setEstimatedWorkers(request.estimatedWorkers());
+        broker.setWorkerMethod(request.workerMethod());
+        broker.setStatus("PENDING");
+        return toResponse(brokers.save(broker));
     }
     }
 }
