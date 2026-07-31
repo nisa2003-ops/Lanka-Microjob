@@ -44,4 +44,14 @@ public class BrokerController {
     BrokerResponse reject(@PathVariable Long id) {
         return service.reject(id);
     }
+
+    @GetMapping("/{brokerId}/dashboard")
+    Map<String, Object> dashboard(@PathVariable String brokerId) {
+        return service.getDashboard(brokerId);
+    }
+
+    @GetMapping("/{brokerId}/workers")
+    List<OfflineWorkerResponse> workers(@PathVariable String brokerId) {
+        return service.getWorkers(brokerId);
+    }
 }
