@@ -54,4 +54,9 @@ public class BrokerController {
     List<OfflineWorkerResponse> workers(@PathVariable String brokerId) {
         return service.getWorkers(brokerId);
     }
+
+    @PostMapping("/{brokerId}/workers")
+    OfflineWorkerResponse addWorker(@PathVariable String brokerId, @RequestBody OfflineWorkerRequest request) {
+        return service.addOfflineWorker(brokerId, request);
+    }
 }
