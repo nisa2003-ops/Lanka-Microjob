@@ -34,4 +34,14 @@ public class BrokerController {
     List<BrokerResponse> pending() {
         return service.getPending();
     }
+
+    @PutMapping("/{id}/approve")
+    BrokerResponse approve(@PathVariable Long id) {
+        return service.approve(id);
+    }
+
+    @PutMapping("/{id}/reject")
+    BrokerResponse reject(@PathVariable Long id) {
+        return service.reject(id);
+    }
 }
