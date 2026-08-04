@@ -7,3 +7,13 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
+
+@Component
+public class JobSeeder implements CommandLineRunner {
+    private final JobRepository jobs;
+    private final JobService service;
+
+    public JobSeeder(JobRepository jobs, JobService service) {
+        this.jobs = jobs;
+        this.service = service;
+    }
