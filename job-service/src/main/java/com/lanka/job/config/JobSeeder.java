@@ -17,3 +17,7 @@ public class JobSeeder implements CommandLineRunner {
         this.jobs = jobs;
         this.service = service;
     }
+    @Override
+    public void run(String... args) {
+
+    }
