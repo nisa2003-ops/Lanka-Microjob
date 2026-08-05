@@ -14,3 +14,4 @@ public class JobController {
     public JobController(JobService service) {
         this.service = service;
     }
+}
