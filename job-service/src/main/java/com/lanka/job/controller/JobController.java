@@ -18,4 +18,9 @@ public class JobController {
     JobResponse create(@RequestBody JobRequest request) {
         return service.create(request);
     }
+    @GetMapping
+    List<JobResponse> list(@RequestParam(required = false) String district, @RequestParam(required = false) String city,
+                           @RequestParam(required = false) String category) {
+        return service.find(district, city, category);
+    }
 }
