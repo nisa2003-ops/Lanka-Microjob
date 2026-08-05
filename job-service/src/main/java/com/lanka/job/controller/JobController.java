@@ -23,4 +23,8 @@ public class JobController {
                            @RequestParam(required = false) String category) {
         return service.find(district, city, category);
     }
+    @GetMapping("/{id}")
+    JobResponse get(@PathVariable Long id) {
+        return service.getById(id);
+    }
 }
