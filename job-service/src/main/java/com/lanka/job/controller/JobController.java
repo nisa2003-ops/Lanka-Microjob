@@ -14,4 +14,8 @@ public class JobController {
     public JobController(JobService service) {
         this.service = service;
     }
+    @PostMapping
+    JobResponse create(@RequestBody JobRequest request) {
+        return service.create(request);
+    }
 }
