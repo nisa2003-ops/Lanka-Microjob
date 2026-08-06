@@ -33,4 +33,9 @@ public class JobController {
     JobResponse updateStatus(@PathVariable Long id, @RequestParam String status) {
         return service.updateStatus(id, status);
     }
+
+    @PutMapping("/{id}/flag")
+    JobResponse flag(@PathVariable Long id) {
+        return service.flagJob(id);
+    }
 }
