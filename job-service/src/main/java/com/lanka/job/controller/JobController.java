@@ -27,4 +27,10 @@ public class JobController {
     JobResponse get(@PathVariable Long id) {
         return service.getById(id);
     }
+
+
+    @PutMapping("/{id}/status")
+    JobResponse updateStatus(@PathVariable Long id, @RequestParam String status) {
+        return service.updateStatus(id, status);
+    }
 }
