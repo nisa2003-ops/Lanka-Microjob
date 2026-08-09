@@ -7,3 +7,13 @@ import org.springframework.web.server.ResponseStatusException;
 
 import java.time.LocalDateTime;
 import java.util.Map;
+
+@ControllerAdvice
+public class GlobalExceptionHandler {
+    @ExceptionHandler(ResponseStatusException.class)
+    ResponseEntity<Map<String, Object>> handle(ResponseStatusException ex) {
+        return ResponseEntity.status(ex.getStatusCode()).body(Map.of(
+                "error", ex.getReason() == null ? "Request failed" : ex.getReason(),
+                "status", ex.getStatusCode().value(),
+                "timestamp", LocalDateTime.now().toString()));
+    }
