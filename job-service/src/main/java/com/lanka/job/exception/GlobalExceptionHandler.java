@@ -17,3 +17,8 @@ public class GlobalExceptionHandler {
                 "status", ex.getStatusCode().value(),
                 "timestamp", LocalDateTime.now().toString()));
     }
+
+    @ExceptionHandler(Exception.class)
+    ResponseEntity<Map<String, Object>> handleGeneric(Exception ex) {
+        return ResponseEntity.badRequest().body(Map.of("error", ex.getMessage(), "status", 400, "timestamp", LocalDateTime.now().toString()));
+    }
