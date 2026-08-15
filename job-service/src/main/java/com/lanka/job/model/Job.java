@@ -24,4 +24,12 @@ public class Job {
     private String requiredSkills;
     private String additionalNotes;
     private LocalDateTime createdAt;
+
+    @PrePersist
+    void prePersist() {
+        if (status == null) status = "OPEN";
+        if (urgent == null) urgent = false;
+        if (slotsRemaining == null) slotsRemaining = workersNeeded;
+        if (createdAt == null) createdAt = LocalDateTime.now();
+    }
 }
