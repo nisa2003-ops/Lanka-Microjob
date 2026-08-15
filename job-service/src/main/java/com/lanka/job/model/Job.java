@@ -32,4 +32,7 @@ public class Job {
         if (slotsRemaining == null) slotsRemaining = workersNeeded;
         if (createdAt == null) createdAt = LocalDateTime.now();
     }
+    public Long getId() {
+        return id;
+    }
 }
