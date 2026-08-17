@@ -47,5 +47,8 @@ public class Job {
     public String getEmployer() {
         return employer;
     }
+    public void setEmployer(String employer) {
+        this.employer = employer;
+    }
 
 }
