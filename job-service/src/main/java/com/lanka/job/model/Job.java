@@ -50,5 +50,8 @@ public class Job {
     public void setEmployer(String employer) {
         this.employer = employer;
     }
+    public String getCategory() {
+        return category;
+    }
 
 }
