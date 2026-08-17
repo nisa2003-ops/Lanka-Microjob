@@ -57,4 +57,8 @@ public class Job {
         this.category = category;
     }
 
+    public String getDistrict() {
+        return district;
+    }
+
 }
