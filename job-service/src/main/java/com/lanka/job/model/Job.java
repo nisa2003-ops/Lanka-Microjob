@@ -115,4 +115,7 @@ public class Job {
     public void setSlotsRemaining(Integer slotsRemaining) {
         this.slotsRemaining = slotsRemaining;
     }
+    public String getRequiredSkills() {
+        return requiredSkills;
+    }
 }
