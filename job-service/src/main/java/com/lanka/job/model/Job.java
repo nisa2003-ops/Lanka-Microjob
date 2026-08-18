@@ -85,5 +85,12 @@ public class Job {
     public void setPayPerWorker(Integer payPerWorker) {
         this.payPerWorker = payPerWorker;
     }
+    public LocalDate getJobDate() {
+        return jobDate;
+    }
+
+    public void setJobDate(LocalDate jobDate) {
+        this.jobDate = jobDate;
+    }
 
 }
