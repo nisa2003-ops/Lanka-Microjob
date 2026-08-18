@@ -112,4 +112,7 @@ public class Job {
     public Integer getSlotsRemaining() {
         return slotsRemaining;
     }
+    public void setSlotsRemaining(Integer slotsRemaining) {
+        this.slotsRemaining = slotsRemaining;
+    }
 }
