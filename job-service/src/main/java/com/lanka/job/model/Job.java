@@ -109,4 +109,7 @@ public class Job {
         this.urgent = urgent;
     }
 
+    public Integer getSlotsRemaining() {
+        return slotsRemaining;
+    }
 }
