@@ -92,5 +92,8 @@ public class Job {
     public void setJobDate(LocalDate jobDate) {
         this.jobDate = jobDate;
     }
+    public String getStatus() {
+        return status;
+    }
 
 }
