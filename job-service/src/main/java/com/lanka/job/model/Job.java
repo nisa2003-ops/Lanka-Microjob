@@ -118,4 +118,9 @@ public class Job {
     public String getRequiredSkills() {
         return requiredSkills;
     }
+    public void setRequiredSkills(String requiredSkills) {
+        this.requiredSkills = requiredSkills;
+    }
+
+
 }
