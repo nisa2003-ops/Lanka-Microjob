@@ -70,5 +70,12 @@ public class Job {
     public void setCity(String city) {
         this.city = city;
     }
+    public Integer getWorkersNeeded() {
+        return workersNeeded;
+    }
+
+    public void setWorkersNeeded(Integer workersNeeded) {
+        this.workersNeeded = workersNeeded;
+    }
 
 }
