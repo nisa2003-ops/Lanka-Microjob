@@ -101,5 +101,8 @@ public class Job {
     public String getStatus() {
         return status;
     }
+    public Boolean getUrgent() {
+        return urgent;
+    }
 
 }
