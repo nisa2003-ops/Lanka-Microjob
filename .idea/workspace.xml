@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38e05ac1-49c0-4230-b374-aa9f218b9113" name="Changes" comment="" />
+    <list default="true" id="38e05ac1-49c0-4230-b374-aa9f218b9113" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/job-service/src/main/java/com/lanka/job/model/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/job-service/src/main/java/com/lanka/job/model/Job.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,7 +65,7 @@
       <workItem from="1786813635028" duration="904000" />
       <workItem from="1786897824099" duration="168000" />
       <workItem from="1786986619832" duration="201000" />
-      <workItem from="1787085276015" duration="293000" />
+      <workItem from="1787085276015" duration="604000" />
     </task>
     <servers />
   </component>
