@@ -60,5 +60,8 @@ public class Job {
     public String getDistrict() {
         return district;
     }
+    public void setDistrict(String district) {
+        this.district = district;
+    }
 
 }
