@@ -78,4 +78,12 @@ public class Job {
         this.workersNeeded = workersNeeded;
     }
 
+    public Integer getPayPerWorker() {
+        return payPerWorker;
+    }
+
+    public void setPayPerWorker(Integer payPerWorker) {
+        this.payPerWorker = payPerWorker;
+    }
+
 }
