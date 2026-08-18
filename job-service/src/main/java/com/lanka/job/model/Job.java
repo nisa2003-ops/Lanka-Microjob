@@ -105,4 +105,8 @@ public class Job {
         return urgent;
     }
 
+    public void setUrgent(Boolean urgent) {
+        this.urgent = urgent;
+    }
+
 }
