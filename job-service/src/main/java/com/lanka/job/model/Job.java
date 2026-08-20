@@ -127,6 +127,9 @@ public class Job {
     public void setAdditionalNotes(String additionalNotes) {
         this.additionalNotes = additionalNotes;
     }
+    public LocalDateTime getCreatedAt() {
+        return createdAt;
+    }
 
 
 }
