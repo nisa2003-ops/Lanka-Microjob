@@ -124,6 +124,9 @@ public class Job {
     public String getAdditionalNotes() {
         return additionalNotes;
     }
+    public void setAdditionalNotes(String additionalNotes) {
+        this.additionalNotes = additionalNotes;
+    }
 
 
 }
