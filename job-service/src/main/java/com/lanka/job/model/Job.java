@@ -121,6 +121,9 @@ public class Job {
     public void setRequiredSkills(String requiredSkills) {
         this.requiredSkills = requiredSkills;
     }
+    public String getAdditionalNotes() {
+        return additionalNotes;
+    }
 
 
 }
