@@ -23,5 +23,13 @@ public class JwtUtil {
     public String extractRole(String token) {
         return claims(token).get("role", String.class);
     }
+    public boolean validateToken(String token) {
+        try {
+            claims(token);
+            return true;
+        } catch (JwtException | IllegalArgumentException ex) {
+            return false;
+        }
+    }
 
 }
