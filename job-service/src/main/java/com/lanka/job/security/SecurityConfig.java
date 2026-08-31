@@ -15,5 +15,9 @@ import java.util.List;
 
 @Configuration
 public class SecurityConfig {
+    private final JwtFilter jwtFilter;
 
+    public SecurityConfig(JwtFilter jwtFilter) {
+        this.jwtFilter = jwtFilter;
+    }
 }
